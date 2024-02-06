@@ -1,4 +1,4 @@
-# RBI Automation Testing
+# RBI - eCase Test Automation
 
 ## Table of Contents
 
