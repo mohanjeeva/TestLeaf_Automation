@@ -73,8 +73,10 @@
   ![image](https://github.com/mohanjeeva/TestLeaf_Automation/assets/22591852/af46d5d4-b35f-4075-8bdd-6b76889670e8)
 - Click on Environmental Variables button
 - Under System Variables, click "New" to add a new variable:
-- Variable Name: `JAVA_HOME`
+- Variable Name: `Path`
 - Variable Value: Bin folder path to your Java installation directory (e.g., `C:\Program Files\Java\jdk-17.x.x\bin`).
+  ![image](https://github.com/mohanjeeva/TestLeaf_Automation/assets/22591852/f0018b40-3a3f-4c33-8e1b-f6eedeedcbdb)
+
 - Verify installation by entering "java -version" in command prompt and confirm the installation.
 
 ### IntelliJ IDEA
@@ -95,6 +97,8 @@
 - **Set up Environment Variables:** Set up the `M2_HOME` and `PATH` environment variables. `M2_HOME` should point to the directory where Maven is installed, and `PATH` should include the `bin` directory inside the Maven installation directory.
  
 - **Verify Installation:** Open a command prompt or terminal and type `mvn -version` to verify that Maven is correctly installed and configured. You should see the version of Maven installed and other relevant information.
+  ![image](https://github.com/mohanjeeva/TestLeaf_Automation/assets/22591852/9dc343ed-4ebc-41da-94a4-20e1ce1e055f)
+
 
 ### GIT
 - **Download Git:** Go to the official Git website (https://git-scm.com/) and download the appropriate version of Git for your operating system.
@@ -102,6 +106,9 @@
 - **Install Git:** Once the download is complete, run the installer and follow the installation wizard's prompts.
  
 - **Verify Installation:** To verify Git has been successfully installed, open a terminal or command prompt and type `git --version`. You should see the Git version number displayed, indicating that Git is installed and accessible from the command line.
+
+  ![image](https://github.com/mohanjeeva/TestLeaf_Automation/assets/22591852/2c47621b-9d4b-4238-b442-272282eb4690)
+
 
 ## Framework Setup
 ### Framework Creation
