@@ -56,8 +56,46 @@
 
 ## Tools Insatallation steps
 ### Java
+- Check whether Java is already installed on the system or not in command prompt using "java -version", if it is installed you can see the java version
+  
+  ![image](https://github.com/mohanjeeva/TestLeaf_Automation/assets/22591852/64e2b4eb-f528-4a5d-b05d-5373cb8c31c0)
+- If it is not installed then you will get responce shown in below image
+
+  ![image](https://github.com/mohanjeeva/TestLeaf_Automation/assets/22591852/87ad4492-82e2-474a-8269-33b326c94c46)
+- Visit the Oracle JDK download page or the OpenJDK download page using https://www.oracle.com/in/java/technologies/downloads/
+- Select the version you want (Java 11 or a later version).
+- Download the installer suitable for your Windows architecture (32-bit or 64-bit).
+- Execute the downloaded installer.
+- Follow the installation wizard instructions.
+- Choose the installation directory and complete the installation process.
+- Search for edit environmental variables
+
+  ![image](https://github.com/mohanjeeva/TestLeaf_Automation/assets/22591852/af46d5d4-b35f-4075-8bdd-6b76889670e8)
+- Click on Environmental Variables button
+- Under System Variables, click "New" to add a new variable:
+- Variable Name: `JAVA_HOME`
+- Variable Value: Bin folder path to your Java installation directory (e.g., `C:\Program Files\Java\jdk-17.x.x\bin`).
+- Verify installation by entering "java -version" in command prompt and confirm the installation.
+
 ### IntelliJ IDEA
+- Visit the [official IntelliJ IDEA download page](https://www.jetbrains.com/idea/download/).
+- Download the Community or Ultimate edition based on your requirements.
+- Once the download is complete, run the installer executable.
+- Follow the installation wizard instructions.
+- Choose the installation location for IntelliJ IDEA.
+- You can also associate file extensions, create desktop shortcuts, etc., based on your preferences.
+- Wait for the installation to complete.
+- Once finished, you can launch IntelliJ IDEA.
+
 ### Maven
+- **Download Maven:** Go to the official Apache Maven website (https://maven.apache.org/download.cgi) and download the latest version of Maven. Choose the binary zip archive.
+ 
+- **Extract Maven:** Once the download is complete, extract the contents of the downloaded zip file to a directory on your system. Choose a location where you want Maven to be installed.
+ 
+- **Set up Environment Variables:** Set up the `M2_HOME` and `PATH` environment variables. `M2_HOME` should point to the directory where Maven is installed, and `PATH` should include the `bin` directory inside the Maven installation directory. This step is optional but recommended for easier command-line usage.
+ 
+- **Verify Installation:** Open a command prompt or terminal and type `mvn -version` to verify that Maven is correctly installed and configured. You should see the version of Maven installed and other relevant information.
+
 ### GIT
 
 ## Framework Setup
