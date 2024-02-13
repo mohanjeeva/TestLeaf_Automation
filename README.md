@@ -92,11 +92,16 @@
  
 - **Extract Maven:** Once the download is complete, extract the contents of the downloaded zip file to a directory on your system. Choose a location where you want Maven to be installed.
  
-- **Set up Environment Variables:** Set up the `M2_HOME` and `PATH` environment variables. `M2_HOME` should point to the directory where Maven is installed, and `PATH` should include the `bin` directory inside the Maven installation directory. This step is optional but recommended for easier command-line usage.
+- **Set up Environment Variables:** Set up the `M2_HOME` and `PATH` environment variables. `M2_HOME` should point to the directory where Maven is installed, and `PATH` should include the `bin` directory inside the Maven installation directory.
  
 - **Verify Installation:** Open a command prompt or terminal and type `mvn -version` to verify that Maven is correctly installed and configured. You should see the version of Maven installed and other relevant information.
 
 ### GIT
+- **Download Git:** Go to the official Git website (https://git-scm.com/) and download the appropriate version of Git for your operating system.
+ 
+- **Install Git:** Once the download is complete, run the installer and follow the installation wizard's prompts.
+ 
+- **Verify Installation:** To verify Git has been successfully installed, open a terminal or command prompt and type `git --version`. You should see the Git version number displayed, indicating that Git is installed and accessible from the command line.
 
 ## Framework Setup
 ### Framework Creation
