@@ -122,7 +122,7 @@
 ### Creating repository
 **Sign in or Sign up:** Go to the GitHub website and sign in to your account. If you don't have an account, you'll need to sign up for one.
  
-**Navigate to Repositories:** Once logged in, click on the "+" icon in the top right corner of the page, then select **New repository** from the dropdown menu.
+**Create Repositories:** Once logged in, click on the "+" icon in the top right corner of the page, then select **New repository** from the dropdown menu.
 
 ![image](https://github.com/mohanjeeva/TestLeaf_Automation/assets/22591852/2c8f44b0-30f2-4707-a579-5c38f61d7c05)
  
@@ -137,11 +137,12 @@
      ![image](https://github.com/mohanjeeva/TestLeaf_Automation/assets/22591852/7781c577-3a36-4d2e-a647-986f30c6a900)
 
  
-**Create Repository:** Once you've filled in the details, click the "Create repository" button.
+    - Once you've filled in the details, click the "Create repository" button.
 
 ![image](https://github.com/mohanjeeva/TestLeaf_Automation/assets/22591852/d9cf10f6-fd06-43db-b983-89109ef2bf34)
 
 ### Adding the pacakge to repository
+- Create a new folder and open git bash here by right click on the folder
 - Initialize the local directory as a Git repository using **git init**
 - Add the files in your new local repository using **git add --all**. This stages you for the first commit
 - Commit the files that you've staged in your local repository using **git commit -m "first commit**
