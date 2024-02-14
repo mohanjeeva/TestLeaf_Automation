@@ -23,7 +23,6 @@
     - Adding the pacakge to repository
     - Cloning the package to local
     - Steps to Push and Pull the code
-    - Steps to handle merge conflicts
 * [CI/CD Pipeline creation](#cicd-pipeline-creation)
 
 ## Overview
@@ -56,7 +55,7 @@
 
 ## Tools Insatallation steps
 ### Java
-- Check whether Java is already installed on the system or not in command prompt using "java -version", if it is installed you can see the java version
+- Check whether Java is already installed on the system or not in command prompt using **java -version**, if it is installed you can see the java version
   
   ![image](https://github.com/mohanjeeva/TestLeaf_Automation/assets/22591852/64e2b4eb-f528-4a5d-b05d-5373cb8c31c0)
 - If it is not installed then you will get responce shown in below image
@@ -80,7 +79,7 @@
 - Verify installation by entering "java -version" in command prompt and confirm the installation.
 
 ### IntelliJ IDEA
-- Visit the [official IntelliJ IDEA download page](https://www.jetbrains.com/idea/download/).
+- Download IntelliJ IDEA using [official IntelliJ IDEA download page](https://www.jetbrains.com/idea/download/).
 - Download the Community or Ultimate edition based on your requirements.
 - Once the download is complete, run the installer executable.
 - Follow the installation wizard instructions.
@@ -121,9 +120,67 @@
 
 ## Source Code Management
 ### Creating repository
+**Sign in or Sign up:** Go to the GitHub website and sign in to your account. If you don't have an account, you'll need to sign up for one.
+ 
+**Navigate to Repositories:** Once logged in, click on the "+" icon in the top right corner of the page, then select **New repository** from the dropdown menu.
+
+![image](https://github.com/mohanjeeva/TestLeaf_Automation/assets/22591852/2c8f44b0-30f2-4707-a579-5c38f61d7c05)
+ 
+**Set up Repository:** On the new repository page, you'll need to fill in some details:
+   - **Repository name:** Choose a name for your repository.
+   - **Description (optional):** Add a brief description to help others understand your project.
+   - **Visibility:** Choose whether your repository will be public (visible to everyone) or private (visible only to you and collaborators).
+   - **Initialize this repository with a README (optional):** If selected, GitHub will create a README file for your repository. This can be helpful for providing an overview of your project.
+   - **Add .gitignore:** Optionally, you can choose a .gitignore template to ignore certain files in your repository.
+   - **Choose a license (optional):** You can select a license for your project to specify how others can use it.
+
+     ![image](https://github.com/mohanjeeva/TestLeaf_Automation/assets/22591852/7781c577-3a36-4d2e-a647-986f30c6a900)
+
+ 
+**Create Repository:** Once you've filled in the details, click the "Create repository" button.
+
+![image](https://github.com/mohanjeeva/TestLeaf_Automation/assets/22591852/d9cf10f6-fd06-43db-b983-89109ef2bf34)
+
 ### Adding the pacakge to repository
+- Initialize the local directory as a Git repository using **git init**
+- Add the files in your new local repository using **git add --all**. This stages you for the first commit
+- Commit the files that you've staged in your local repository using **git commit -m "first commit**
+- Move the code from local repository to remote repository **git remote add origin <remote repository URL>** then set new remote using **git remote -v**
+
+  ![image](https://github.com/mohanjeeva/TestLeaf_Automation/assets/22591852/1a42542a-acb6-4850-87e7-5ba2ab7e54e1)
+- Push the changes in your local repository to GitHub using **git push origin master**
+
 ### Cloning the package to local
+- Create a new folder where you want to place your project
+
+  ![image](https://github.com/mohanjeeva/TestLeaf_Automation/assets/22591852/d9469c6a-5d42-43f9-b672-2cfb036e18dc)
+
+- Open newly created folder and do Git Bash Here, a command prompt will open
+
+  ![image](https://github.com/mohanjeeva/TestLeaf_Automation/assets/22591852/4d05f65c-1eb6-41aa-b99e-44bdce28c715)
+
+- Initialize git to the folder using below command  git init, new .git hidden folder will be there
+
+  ![image](https://github.com/mohanjeeva/TestLeaf_Automation/assets/22591852/83ae9079-3284-480e-92f8-a423ae2d1f91)
+
+- Then clone the project, copy HTTP URL from git repository and clone using **git clone <HTTP_URL>**, here main branch will sync with our machine
+
+  ![image](https://github.com/mohanjeeva/TestLeaf_Automation/assets/22591852/6b17dfd2-ce84-432a-a960-65ad931dd11c)
+  ![image](https://github.com/mohanjeeva/TestLeaf_Automation/assets/22591852/81d486e5-7314-415c-bbb5-311abb868b92)
+
+
+- Navigate to the newly cloned folder(which contains code of main branch), if we have the latest code in branch that is fine or else we have to sync the child branch by reopen the Git Bash Here and merge code using following commend **git checkout <childbranch_Name>**
+
+  ![image](https://github.com/mohanjeeva/TestLeaf_Automation/assets/22591852/4f4f2363-69c1-4f60-a19a-8b81a4608bf2)
+
 ### Steps to Push and Pull the code
-### Steps to handle merge conflicts
+#### Steps to push the code
+- Open the project folder, select git bash here by right click on the folder
+- Add the modified files using the command **git add .** or **git add --all**
+- Then Commit the code using **git commit -m <Commit_message>**
+- Then push the code using **git push**
+#### Steps to pull the code
+- Open the project folder, select git bash here by right click on the folder
+- Then pull the code using the command **git pull**
 
 ## CI/CD Pipeline creation
